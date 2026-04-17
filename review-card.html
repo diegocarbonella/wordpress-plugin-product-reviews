@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Card</title>
+</head>
+<body>
+    <div class="card">
+        <h3>Excellent!</h3>
+        <p>I loved this!</p>
+        <p>****</p>
+        <p> <span id="counter">1</span>  people found this helpful</p>
+        <button onclick="markAsHelpful()">Mark as helpful</button>
+    </div>
+</body>
+</html>
+
+
+<script>
+
+function markAsHelpful() {
+    var newValue =  parseInt(document.querySelector("#counter").textContent) +1
+    document.querySelector("#counter").textContent = newValue
+}
+
+</script>
